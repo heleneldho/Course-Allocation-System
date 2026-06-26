@@ -5,9 +5,9 @@ from sqlmodel import Session, create_engine, select, SQLModel
 import pandas as pd
 import json
 from .models import Course, Faculty, AssignmentResult
-from algorithm import allocate_courses
+from .algorithm import allocate_courses
 # 2. Imported your database engine so connection instances initialize properly
-from database import engine 
+from .database import engine 
 
 app = FastAPI()
 
